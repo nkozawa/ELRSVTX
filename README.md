@@ -1,7 +1,7 @@
 # ELRS VTX Admin Widget for EdgeTX
 
-An EdgeTX widget to display VTX (Video Transmitter) band and channel information retrieved from an ELRS (ExpressLRS) module.
-
+An EdgeTX widget to display VTX band and channel information retrieved from an ELRS (ExpressLRS) TX module.
+![Screen](images/ELRSVTX.bmp)
 ---
 
 ## English
@@ -12,38 +12,37 @@ This project aims to create an EdgeTX Lua widget that communicates with an ELRS 
 ### Features
 *   **ELRS Communication:** Directly queries the ELRS module for VTX band and channel data.
 *   **EdgeTX Widget:** Designed to run as a standalone widget on EdgeTX radios.
-*   **Customizable Display:** Displays the VTX information (e.g., "F:4:1") within a widget frame.
-*   **Transparent Background:** The widget background is transparent.
-*   **Configurable Text Color:** Option to select the text color for display.
+*   **Customizable Display:** Allows configuration of text color, text size, and display position.
+
+
+### Installation
+Store `main.lua` in the following path on the transmitter's SD card:
+```/WIDGETS/ELRSVTX/main.lua```
 
 ### Configuration
 The widget offers several configuration options to customize its appearance. These settings can be accessed through the EdgeTX radio's widget settings menu.
 ![Configuration Settings](images/ELRSVTXSetting.bmp)
-(Please provide details for the configuration items shown in the image.)
 
 
-### License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 日本語
 
-### プロジェクト概要
-このプロジェクトは、ELRS (ExpressLRS) モジュールから現在のVTX (映像送信機) のバンドとチャネル設定を取得し、EdgeTXラジオの画面に表示するLuaウィジェットを作成することを目的としています。この情報（例：「F:4:1」のような形式で表示されることが多い）は、パイロットが映像送信設定をEdgeTXラジオ画面で直接迅速に確認するために不可欠です。
+### 概要
+ELRS (ExpressLRS) TXモジュールからVTXに送るバンドとチャネル設定を取得し表示するEdgeTXのウィジェットです。
 
 ### 機能
-*   **ELRS通信:** ELRSモジュールに直接問い合わせてVTXのバンドとチャネルデータを取得します。
-*   **EdgeTXウィジェット:** EdgeTXラジオ上でスタンドアロンウィジェットとして動作するように設計されています。
-*   **カスタマイズ可能な表示:** VTX情報（例：「F:4:1」）をウィジェットフレーム内に表示します。
-*   **透過背景:** ウィジェットの背景は透過です。
-*   **文字色の設定:** 表示する文字色を選択するオプションがあります。
+*   **ELRS通信:** ELRS TXモジュールに直接問い合わせてVTXのバンドとチャネルデータを取得します。
+*   **EdgeTXウィジェット:** EdgeTXラジオ上でウィジェットとして動作するように設計されています。
+*   **カスタマイズ可能な表示:** 文字色、文字サイズ、表示位置などを設定可能です。
+
+### 導入
+送信機のSDカードの以下のパスにmain.luaを保管します。
+```/WIDGETS/ELRSVTX/main.lua```
 
 ### 設定
-このウィジェットは、表示をカスタマイズするためのいくつかの設定オプションを提供します。これらの設定は、EdgeTXラジオのウィジェット設定メニューからアクセスできます。
+このウィジェットは、表示をカスタマイズするためのいくつかの設定オプションを提供します。これらの設定は、EdgeTX送信機のウィジェット設定メニューからアクセスできます。
 ![設定画面](images/ELRSVTXSetting.bmp)
-（画像に表示されている設定項目の詳細を提供してください。）
 
 
-### License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
