@@ -1,6 +1,7 @@
--- vtx_finder_widget.lua
 -- This script is an EdgeTX Lua widget designed to find and display the "VTX Admin" field's value
 -- by directly communicating with the ELRS transmission module via CRSF telemetry.
+-- Copyright (c) 2026 KozakFPV (Nobumichi Kozawa)
+-- Version: 0.9
 
 local DEBUG_LOG_FILE = "/WIDGETS/ELRSVTX/debug.log"
 
