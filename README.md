@@ -6,8 +6,11 @@ An EdgeTX widget to display VTX band and channel information retrieved from an E
 
 ## English
 
-### Project Overview
-This project aims to create an EdgeTX Lua widget that communicates with an ELRS module to fetch and display its current VTX band and channel settings. This information, often presented in the format "F:X:Y" (e.g., F:4:1), is crucial for pilots to quickly verify their video transmission setup directly on their EdgeTX radio screen.
+### Overview
+This project aims to create an EdgeTX Lua widget that communicates with an ELRS module to fetch and display its current VTX band and channel settings. 
+
+### Background
+When you change the VTX channel in ExpressLRS Lua or EasyVTXch Lua, that data is stored in the ELRS TX module. This data is transmitted when the ELRS TX establishes a link with the drone, causing the VTX channel to change. The motivation for creating this widget was to provide a convenient way to view that data without having to launch ExpressLRS Lua every time you start up the transmitter.
 
 ### Features
 *   **ELRS Communication:** Directly queries the ELRS module for VTX band and channel data.
@@ -32,9 +35,12 @@ The widget offers several configuration options to customize its appearance. The
 ### 概要
 ELRS (ExpressLRS) TXモジュールからVTXに送るバンドとチャネル設定を取得し表示するEdgeTXのウィジェットです。
 
+### 背景
+ExpressLRS LuaあるいはEasyVTXch LuaなどでVTXチャネルを変更するとELRS TXモジュールに、そのデータは記憶されます。そのデータはELRS TXがドローンとのリンクが確立した際に送付されVTXチャネルが変更されます。そのため送信機を立ち上げた時にExpressLRS Luaを起動することなく、そのデータが確認できると便利だというのが、このウィジェット作成の動機です。
+
 ### 機能
-*   **ELRS通信:** ELRS TXモジュールに直接問い合わせてVTXのバンドとチャネルデータを取得します。
-*   **EdgeTXウィジェット:** EdgeTXラジオ上でウィジェットとして動作するように設計されています。
+*   **ELRS通信:** ELRなS TXモジュールに直接問い合わせてVTXのバンドとチャネルデータを取得します。
+*   **EdgeTXウィジェット:** EdgeTX送信機上でウィジェットとして動作するように設計されています。
 *   **カスタマイズ可能な表示:** 文字色、文字サイズ、表示位置などを設定可能です。
 
 ### 導入
