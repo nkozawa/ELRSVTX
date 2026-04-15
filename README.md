@@ -1,6 +1,7 @@
 # ELRS VTX Widget for EdgeTX
 
 An EdgeTX widget to display VTX band and channel information retrieved from an ELRS (ExpressLRS) TX module.
+
 ![Screen](images/ELRSVTX.bmp)
 ---
 
