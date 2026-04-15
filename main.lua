@@ -1,7 +1,7 @@
 -- This script is an EdgeTX Lua widget designed to find and display the "VTX Admin" field's value
 -- by directly communicating with the ELRS transmission module via CRSF telemetry.
 -- Copyright (c) 2026 KozakFPV (Nobumichi Kozawa)
--- Version: 0.9
+-- Version: 0.91
 
 local DEBUG_LOG_FILE = "/WIDGETS/ELRSVTX/debug.log"
 
@@ -149,7 +149,7 @@ local function background(wgt)
                 log(string.format("Found VTX Admin and extracted value: %s", wgt.vtx_admin_value))
               else
                 log(string.format("Found VTX Admin field but could not extract value from name: %s", name_str))
-                wgt.vtx_admin_value = name_str -- Fallback to full name if extraction fails
+                wgt.vtx_admin_value = "OFF" -- Fallback to full name if extraction fails
               end
             else
               log(string.format("Found VTX Admin field but type is %d, expected 11.", field_type))
